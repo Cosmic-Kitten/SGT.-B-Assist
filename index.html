@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f7f9">
+    <title>Zephyr One Ops</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#overview" aria-label="Zephyr One Ops home">
+          <span class="brand-mark">Z</span>
+          <span>Zephyr One Ops</span>
+        </a>
+        <div class="workspace-label">OPERATIONS</div>
+        <nav class="nav-list" aria-label="Main navigation">
+          <button class="nav-item active" data-view="overview"><span class="nav-icon">▦</span>Dashboard</button>
+          <button class="nav-item" data-view="my-record"><span class="nav-icon">♙</span>My record</button>
+          <button class="nav-item" data-view="inbox"><span class="nav-icon">▤</span>Threads <span class="nav-count">4</span></button>
+          <button class="nav-item" data-view="locations"><span class="nav-icon">⌖</span>Team locations</button>
+          <button class="nav-item" data-view="schedule"><span class="nav-icon">▦</span>Schedules</button>
+          <button class="nav-item" data-view="timeclock"><span class="nav-icon">◴</span>Timeclock</button>
+          <button class="nav-item" data-view="submissions"><span class="nav-icon">▧</span>Officer submissions</button>
+          <button class="nav-item" data-view="pipeline"><span class="nav-icon">⇢</span>Applicant pipeline</button>
+          <button class="nav-item" data-view="onboarding"><span class="nav-icon">☑</span>Onboarding</button>
+          <button class="nav-item" data-view="compliance"><span class="nav-icon">◇</span>Compliance</button>
+          <button class="nav-item" data-view="interviews"><span class="nav-icon">◷</span>Interviews</button>
+          <button class="nav-item" data-view="approvals"><span class="nav-icon">✓</span>Review queue <span class="nav-count warn">3</span></button>
+        </nav>
+        <div class="sidebar-spacer"></div>
+        <div class="connection-card">
+          <div class="connection-title"><span class="status-dot offline"></span>Integrations not connected</div>
+          <p>Preview mode — no messages or schedules are sent.</p>
+          <button class="text-button" data-view="settings">Set up connections <span>→</span></button>
+        </div>
+        <button class="profile" data-view="settings">
+          <span class="avatar">S</span>
+          <span class="profile-copy"><strong>Sara Boudoin</strong><small>Administrator</small></span>
+          <span class="profile-menu">···</span>
+        </button>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <button class="mobile-menu" id="mobile-menu" aria-label="Toggle menu">☰</button>
+          <div class="breadcrumb">Zephyr One Security <span>/</span> <strong id="crumb">Overview</strong></div>
+          <div class="topbar-actions">
+            <span class="preview-chip"><span></span>PREVIEW DATA</span>
+            <button class="icon-button" aria-label="Notifications" data-view="approvals">♧<i></i></button>
+          </div>
+        </header>
+        <section class="content" id="content" aria-live="polite"></section>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
