@@ -97,7 +97,6 @@ h3 { margin-bottom: 5px; font-size: 13px; }
 .mini-copy { min-width: 0; flex: 1; }
 .mini-copy strong { display: block; overflow: hidden; color: #354252; font-size: 11px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
 .mini-copy small { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; }
-.mini-time { color: #929ba6; font-size: 10px; white-space: nowrap; }
 .pill { display: inline-flex; align-items: center; gap: 5px; padding: 4px 8px; border-radius: 20px; background: #f0f2f5; color: #667282; font-size: 9px; font-weight: 700; white-space: nowrap; }
 .pill.green { background: var(--green-soft); color: var(--green); }
 .pill.amber { background: var(--amber-soft); color: var(--amber); }
@@ -118,52 +117,12 @@ tbody tr:last-child td { border-bottom: 0; }
 .search { width: min(260px, 100%); min-height: 35px; padding: 0 11px; border: 1px solid var(--line); border-radius: 7px; outline: none; background: #fff; color: var(--ink); font-size: 11px; }
 .search:focus, textarea:focus, input:focus, select:focus { border-color: #8ea8e6; box-shadow: 0 0 0 3px rgba(65,111,225,.1); outline: 0; }
 .filter { min-height: 35px; padding: 0 10px; border: 1px solid var(--line); border-radius: 7px; background: #fff; color: #647080; font-size: 10px; }
-.location-cell { display: flex; align-items: center; gap: 7px; color: #4d5c6d; font-weight: 600; }
-.location-cell .status-dot { width: 6px; height: 6px; }
-.stale { color: #b88239; }
 .empty-state { padding: 35px 16px; color: var(--muted); text-align: center; font-size: 11px; }
-.empty-icon { width: 38px; height: 38px; display: grid; place-items: center; margin: 0 auto 10px; border-radius: 12px; background: #f0f3f8; color: #8190a4; font-size: 17px; }
-.message-layout { display: grid; grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr); min-height: 430px; }
-.message-list { border-right: 1px solid var(--line); }
-.message-item { display: flex; gap: 10px; padding: 13px; border-bottom: 1px solid #f0f2f4; cursor: pointer; }
-.message-item:hover, .message-item.selected { background: #f7f9fd; }
-.message-item.selected { box-shadow: inset 3px 0 #547de0; }
-.message-body { flex: 1; min-width: 0; }
-.message-top { display: flex; justify-content: space-between; gap: 5px; }
-.message-top strong { font-size: 11px; }
-.message-top small { color: var(--muted); font-size: 9px; white-space: nowrap; }
-.message-subject { margin: 4px 0; color: #4d5c6b; font-size: 10px; font-weight: 600; }
-.message-snippet { overflow: hidden; color: var(--muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
-.conversation { display: flex; flex-direction: column; }
-.conversation-top { padding: 16px; border-bottom: 1px solid var(--line); }
-.conversation-top strong { display: block; font-size: 12px; }
-.conversation-top small { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; }
-.conversation-content { flex: 1; padding: 17px; }
-.bubble { max-width: 90%; margin-bottom: 13px; padding: 11px; border: 1px solid var(--line); border-radius: 9px 9px 9px 2px; background: #fafbfd; color: #566373; font-size: 11px; line-height: 1.6; }
-.bubble.mine { margin-left: auto; border-color: #e2e9fa; border-radius: 9px 9px 2px 9px; background: #f0f4ff; }
-.reply-box { display: grid; gap: 8px; padding: 13px; border-top: 1px solid var(--line); }
-textarea { resize: vertical; min-height: 76px; padding: 10px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); font-size: 11px; line-height: 1.5; }
-.reply-actions { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-.muted-note { color: var(--muted); font-size: 9px; }
-.prompt-box { display: grid; gap: 10px; padding: 16px; border: 1px solid #e5eaf2; border-radius: 10px; background: #fbfcfe; }
-.prompt-label { color: #47576a; font-size: 11px; font-weight: 700; }
-.prompt-hint { margin-top: -5px; color: var(--muted); font-size: 10px; }
-.schedule-preview { margin-top: 14px; }
-.schedule-day { display: grid; grid-template-columns: 125px 1fr; gap: 14px; padding: 13px 0; border-bottom: 1px solid #f0f2f4; }
-.schedule-day:last-child { border-bottom: 0; }
-.schedule-date { color: #405064; font-size: 11px; font-weight: 700; }
-.shift-list { display: grid; gap: 8px; }
-.shift { display: flex; justify-content: space-between; gap: 12px; padding: 9px 11px; border-left: 3px solid #6e8de0; border-radius: 4px; background: #f6f8fd; color: #526174; font-size: 10px; }
-.shift strong { color: #3d4c60; }
 .interview-card { padding: 15px; border-bottom: 1px solid #f0f2f4; }
 .interview-card:last-child { border-bottom: 0; }
 .interview-card-head { display: flex; justify-content: space-between; gap: 12px; }
 .interview-card p { margin: 6px 0 10px; color: var(--muted); font-size: 10px; }
 .interview-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 10px; color: #738092; font-size: 10px; }
-.approval-card { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 15px; border-bottom: 1px solid #f0f2f4; }
-.approval-card:last-child { border-bottom: 0; }
-.approval-card p { margin: 5px 0 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
-.approval-actions { display: flex; gap: 6px; }
 .integration-row { display: flex; align-items: center; gap: 12px; padding: 15px 0; border-bottom: 1px solid #f0f2f4; }
 .integration-row:last-child { border-bottom: 0; }
 .integration-logo { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; background: #f0f3f8; color: #47576a; font-size: 13px; font-weight: 800; }
@@ -197,12 +156,5 @@ textarea { resize: vertical; min-height: 76px; padding: 10px; border: 1px solid 
   .stat-card { min-height: 85px; gap: 9px; padding: 12px; }
   .stat-icon { width: 32px; height: 32px; }
   .stat-value { font-size: 19px; }
-  .message-layout { grid-template-columns: 1fr; }
-  .message-list { border-right: 0; }
-  .conversation { min-height: 330px; border-top: 1px solid var(--line); }
-  .schedule-day { grid-template-columns: 1fr; gap: 8px; }
-  .table-toolbar { width: 100%; flex-wrap: wrap; }
-  .search { flex: 1; }
-  .approval-card { grid-template-columns: 1fr; }
   .preview-chip { font-size: 8px; }
 }
